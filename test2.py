@@ -1,7 +1,12 @@
 # coding=utf8
-import os
+
+############
+# 線形回帰による機械学習
+# 関数を二つに分ける
+####
 
 import scipy as sp
+import matplotlib.pyplot as plt
 
 data = sp.genfromtxt("data/web_traffic.tsv",delimiter="\t")
 
@@ -52,8 +57,7 @@ random_test(x_b,y_b,2)
 random_test(x_b,y_b,3)
 random_test(x_b,y_b,10)
 
-#プロット
-import matplotlib.pyplot as plt
+
 
 #散布図
 plt.scatter(x,y)
